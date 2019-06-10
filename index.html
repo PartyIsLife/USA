@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>4 1</title>
+</head>
+<body style="background: #191970">
+
+
+<center>
+
+
+    <img src="деньги.jpg" height="200" width="200"/>
+    <img src="статуя.jpg" height="200" width="200"/>
+    <br />
+    <img src="орел.jpg" height="200" width="200"/>
+    <img src="мак.jpg" height="200" width="200"/>
+    <br />
+</center>
+
+<center>
+    <div id="1" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: #808080;">
+    ?
+    </div>
+
+    <div id="2" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: #808080">
+    ?
+    </div>
+
+    <div id="3" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: #808080">
+    ?
+    </div>
+    <br />
+    <button onclick="a ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">С</button>
+    <button onclick="b ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">И</button>
+    <button onclick="c ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">Ь</button>
+    <button onclick="d ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">Ш</button>
+    <button onclick="e ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">Й</button>
+    <button onclick="f ()" style="width: 40px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey">А</button>
+    <br />
+    <button onclick="check ()" style="width: 90px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey"> ПРОВЕРКА </button>
+    <button onclick="sbros ()" style="width: 90px; height: 40px; border: solid black 1px; display: inline-block; background: LightGrey"> СБРОС </button>
+
+</center>
+</body>
+<script>
+    z = 0;
+function a () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='С';
+    if (z==2)
+        document.getElementById('2').innerHTML='С';
+    if (z==3)
+        document.getElementById('3').innerHTML='С';
+}
+ function b () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='И';
+    if (z==2)
+        document.getElementById('2').innerHTML='И';
+    if (z==3)
+        document.getElementById('3').innerHTML='И';
+
+
+ }
+ function c () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='Ь';
+    if (z==2)
+        document.getElementById('2').innerHTML='Ь';
+    if (z==3)
+        document.getElementById('3').innerHTML='Ь';
+
+
+ }
+ function d () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='Ш';
+    if (z==2)
+        document.getElementById('2').innerHTML='Ш';
+    if (z==3)
+        document.getElementById('3').innerHTML='Ш';
+
+
+ }
+ function e () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='Й';
+    if (z==2)
+        document.getElementById('2').innerHTML='Й';
+    if (z==3)
+        document.getElementById('3').innerHTML='Й';
+
+
+ }
+ function f () {
+    z = z + 1;
+    if (z==1)
+        document.getElementById('1').innerHTML='А';
+    if (z==2)
+        document.getElementById('2').innerHTML='А';
+    if (z==3)
+        document.getElementById('3').innerHTML='А';
+
+
+ }
+ function check () {
+    if (document.getElementById('1').innerHTML=='С'&&
+        document.getElementById('2').innerHTML=='Ш'&&
+        document.getElementById('3').innerHTML=='А'){
+     alert("ВЫ Выйграли!");
+    } else{
+    z = 0;
+        document.getElementById('1').innerHTML='?'
+        document.getElementById('2').innerHTML='?'
+        document.getElementById('3').innerHTML='?'
+
+alert("Попробуйте еще раз!");
+    }
+ }
+ function sbros () {
+    z = 0;
+     document.getElementById('1').innerHTML='?'
+        document.getElementById('2').innerHTML='?'
+        document.getElementById('3').innerHTML='?'
+
+
+ }
+
+
+</script>
+</html>
